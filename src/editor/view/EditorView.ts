@@ -35,7 +35,7 @@ export default class EditorView extends View<EditorModel> {
     // @ts-ignore
     if (config.width) contEl.css('width', config.width);
     // @ts-ignore
-    if (config.height) contEl.css('height', config.height);
+    if (config.height) contEl.css('min-height', config.height);
 
     $el.append(Canvas.render());
     $el.append(Panels.render());
